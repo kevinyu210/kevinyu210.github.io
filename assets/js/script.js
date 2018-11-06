@@ -51,3 +51,6 @@ var sideNavResume = document.querySelector(".side-nav-resume");
 sideNavResume.addEventListener("click", function() {
 	resumeHeader.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
 })
+
+
+// Python stuff

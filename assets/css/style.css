@@ -353,6 +353,7 @@ h1 {
 	margin: 0 auto;
 	/*padding: 20px;*/
 	padding-top: 0;
+	padding-bottom: 40px;
 }
 /*Subsections of the resume-section-details*/
 
@@ -367,17 +368,11 @@ h1 {
 	padding-left: 0px;
 
 }
-.coursework{
-	/*margin: 0 auto;*/
-	/*background: green;*/
-	/*width: 68%;*/
+/*.coursework{
 	list-style-type: none;
-	/*display:inline;*/
-	/*float:left;*/
-	/*background: black;*/
-	/*padding-left: 2%;*/
-		padding-left: 0px;
-}
+	display:inline;
+	padding-left: 0px;
+}*/
 
 .entry-name{
 	float: left;
@@ -398,4 +393,21 @@ h1 {
 	margin-left: 0;
 	padding-left: 0;
 	/*background: pink;*/
+}
+.skills {
+	list-style-type: none;
+}
+.language-skill {
+	border: #4E7FA0 1px solid;
+	padding: 5px;
+	margin: 4px;
+	border-radius: 8px;
+	float: left;
+}
+.technology-skill {
+	border: green 1px solid;
+	padding: 5px;
+	margin: 4px;
+	border-radius: 8px;
+	float: left;
 }
