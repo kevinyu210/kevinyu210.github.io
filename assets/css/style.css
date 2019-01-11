@@ -6,6 +6,16 @@ body {
     font-size: 1.1em;
 
 }
+pre {
+	background: white;
+	border-radius: 4px;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	border: 1px solid #EEF1F6;
+
+	/*border*/
+	/*line-*/
+}
 
 #main-container {
     padding-left: 50px;
@@ -15,6 +25,8 @@ body {
     bottom: 0;
     /*background-color: #F1F1F1;*/
     /*background: black;*/
+    /*overflow hidden gets rid of bottom scrollbar*/
+    overflow-x: hidden;
     transition: 0.10s;
     /*overflow: auto;*/
 
@@ -56,9 +68,11 @@ h1 {
 	position: fixed;
 	background-color: #4E7FA0;
 	/*Hide the items within the bar*/
-	overflow-x: hidden;
+	/* For some reason overflow hidden created a scrolling bar
+	/*overflow-x: hidden;*/
+	overflow: hidden;
 	transition: 0.10s;
-	/*IMPORTANT!*/
+	/*IMPORTANT! This way it's always in front?*/
 	z-index: 500 !important;
 
 }
@@ -131,7 +145,7 @@ h1 {
 }
 
 .social-media div {
-	width: 22%;
+	width: 18%;
 	display: inline-block;
 	/*border: black 1px solid;*/
 	text-align: center;
@@ -139,10 +153,11 @@ h1 {
 }
 
 .fa {
-  padding: 10px;
+  padding-bottom: 10px;
   font-size: 30px;
   width: 20px;
-  text-align: center;
+  /* why align center*/
+  /*text-align: center;*/
   text-decoration: none;
   margin: 2px auto;
   /*border-radius: 50%;*/
@@ -329,7 +344,7 @@ h1 {
 /*Resume in general styling section*/
 .resume {
 	/*width:80%;*/
-	padding-top: 80px;
+	/*padding-top: 20px;*/
 }
 .resume-section-entry{
 	/*background: green;*/
@@ -338,9 +353,10 @@ h1 {
 	margin-bottom: 50px;
 }
 
-.resume-section h3{
+.resume-section h2{
 	/*min-width:25%;*/
 	margin: 0 auto 20px auto;
+	padding-top: 60px;
 	/*display:inline;*/
 	/*background: pink;*/
 	/*float: left;*/
@@ -399,6 +415,7 @@ h1 {
 }
 .language-skill {
 	border: #4E7FA0 1px solid;
+	color: #4E7FA0;
 	padding: 5px;
 	margin: 4px;
 	border-radius: 8px;
@@ -406,6 +423,7 @@ h1 {
 }
 .technology-skill {
 	border: green 1px solid;
+	color: green;
 	padding: 5px;
 	margin: 4px;
 	border-radius: 8px;

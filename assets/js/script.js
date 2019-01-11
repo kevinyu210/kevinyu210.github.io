@@ -46,11 +46,25 @@ sideNavBio.addEventListener("click", function() {
 	document.body.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
 })
 
-var resumeHeader = document.querySelector(".resume");
-var sideNavResume = document.querySelector(".side-nav-resume");
-sideNavResume.addEventListener("click", function() {
-	resumeHeader.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
+//slide to the resume section?
+var educationSection = document.querySelector(".education-section");
+var sideNavEducation = document.querySelector(".side-nav-education");
+sideNavEducation.addEventListener("click", function() {
+	educationSection.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
 })
 
+//slide to the work experience section?
+var workExperienceSection = document.querySelector(".work-experience-section");
+var sideNavWorkExperience = document.querySelector(".side-nav-work-experience");
+sideNavWorkExperience.addEventListener("click", function() {
+	workExperienceSection.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
+})
+
+//slide to project section
+var projectsSection = document.querySelector(".projects-section");
+var sideNavProjects = document.querySelector(".side-nav-projects");
+sideNavProjects.addEventListener("click", function() {
+	projectsSection.scrollIntoView({behavior: "smooth",block: "start", inline: "nearest"});
+})
 
 // Python stuff
