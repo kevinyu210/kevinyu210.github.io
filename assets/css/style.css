@@ -114,6 +114,18 @@ h1 {
 	visibility:hidden;
 	/*width: 50px;*/
 }
+.see_more div {
+	display: none;
+
+
+}
+.see_more a {
+	cursor: pointer;
+	color:  #23629F;
+	display: block;
+	padding-top: 10px;
+	font-style: italic;
+}
 
 .side-nav-items a {
 	color: white;
@@ -174,7 +186,7 @@ h1 {
 	width: 85%;
 	max-width: 1000px;
 	min-width: 600px;
-	margin: 0px auto 10px auto;
+	margin: 0px auto 20px auto;
 	/*border: gray 1px solid;*/
 	padding: 10px 50px;
 	background-color: #F1F1F1
@@ -346,9 +358,12 @@ h1 {
 	/*width:80%;*/
 	/*padding-top: 20px;*/
 }
-.resume-section-entry{
-	/*background: green;*/
+.projects-section .resume-section-entry div .skills{
+	padding-bottom: 25px;
+	border-bottom: 1px solid grey;
+
 }
+
 .resume-section {
 	margin-bottom: 50px;
 }
@@ -394,7 +409,16 @@ h1 {
 	float: left;
 	font-weight: bold;
 }
+
+.location {
+	padding-bottom: 5px;
+	float: right;
+	font-style: italic;
+	font-weight: bold;
+}
 .date {
+		padding-bottom: 5px;
+
 	float: right;
 	font-style: italic;
 

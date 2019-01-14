@@ -10,6 +10,33 @@ var navItems = document.querySelectorAll(".side-nav-item");
 var minimizedNavWidth = "50px";
 var expandedNavWidth = "200px";
 
+var seeMoreSection = document.querySelectorAll(".see_more div");
+console.log(seeMoreSection.length + "total");
+var seeMoreLinks = document.querySelectorAll(".see_more a")
+
+for (var i = 0; i< seeMoreLinks.length; i++) {
+	var section = seeMoreSection[i];
+	console.log(i);
+	console.log(section);
+	seeMoreLinks[i].addEventListener("click", function() {
+		// console.log(section);
+		if (this.innerHTML == "See Less") {
+			// Minimize it
+			this.innerHTML = "See More";
+			section.style.display = "none";
+		}
+		else {
+			// Maximize it
+
+			this.innerHTML = "See Less";
+			section.style.display = "block";
+		}
+	})
+}
+
+
+
+
 function openNav() {
 	sideNav.style.width = expandedNavWidth;
 	sideNavItemsDivs.style.width = expandedNavWidth;
