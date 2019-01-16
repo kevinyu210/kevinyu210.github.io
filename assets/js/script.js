@@ -12,26 +12,28 @@ var expandedNavWidth = "200px";
 
 var seeMoreSection = document.querySelectorAll(".see_more div");
 console.log(seeMoreSection.length + "total");
-var seeMoreLinks = document.querySelectorAll(".see_more a")
+var seeMoreLinks = document.querySelectorAll("div.see_more > a");
+
+
 
 for (var i = 0; i< seeMoreLinks.length; i++) {
-	var section = seeMoreSection[i];
+	var section;
 	console.log(i);
 	console.log(section);
-	seeMoreLinks[i].addEventListener("click", function() {
-		// console.log(section);
-		if (this.innerHTML == "See Less") {
-			// Minimize it
-			this.innerHTML = "See More";
-			section.style.display = "none";
-		}
-		else {
-			// Maximize it
+	(function () {
+		var section = seeMoreSection[i];
+		seeMoreLinks[i].addEventListener("click", function() {
+			if (this.innerHTML == "See Less") {
+				this.innerHTML = "See More";
+				section.style.display = "none";
+			}
+			else {
+				this.innerHTML = "See Less";
+				section.style.display = "block";
+			}
+		});
+	}());
 
-			this.innerHTML = "See Less";
-			section.style.display = "block";
-		}
-	})
 }
 
 

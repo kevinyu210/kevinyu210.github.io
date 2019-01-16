@@ -116,8 +116,7 @@ h1 {
 }
 .see_more div {
 	display: none;
-
-
+	padding-top: 10px;
 }
 .see_more a {
 	cursor: pointer;
