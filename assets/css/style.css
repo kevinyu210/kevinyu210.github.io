@@ -1,5 +1,5 @@
 body {
-    background-color: #E1E1E1;
+    background-color: #444444;
     /*background-image:;*/
     /*font-family: 'Open Sans', sans-serif;*/
     font-family: 'Karla', sans-serif;
@@ -48,14 +48,16 @@ h1 {
 	text-align: center;
 	position: sticky;
 	top: 0;
-    /*background-color: #F1F1F1;*/
-    background-color: #E1E1E1;
+    background-color: #F1F1F1;
+	/* background-color: #E1E1E1; */
+	border-radius: 0px 0px 12px 0px;
     padding: 10px 51px;
     display:block;
     z-index: 499 !important;
     /*border-bottom: grey solid 2px;*/
     max-width: 1000px;
 	min-width: 600px;
+	margin: 0px auto 10px auto;
 
 }
 #side-nav {
@@ -66,7 +68,7 @@ h1 {
 	left: 0;
 	/*border: 2px black solid;*/
 	position: fixed;
-	background-color: #4E7FA0;
+	background-color: #253a47;
 	/*Hide the items within the bar*/
 	/* For some reason overflow hidden created a scrolling bar
 	/*overflow-x: hidden;*/
@@ -75,6 +77,15 @@ h1 {
 	/*IMPORTANT! This way it's always in front?*/
 	z-index: 500 !important;
 
+}
+
+.side-nav-item{
+	display: block;
+	width: 200px;
+	/*padding: 10px 0;*/
+	background-color: #253a47;
+	visibility:hidden;
+	/*width: 50px;*/
 }
 
 #side-nav ul{
@@ -95,25 +106,17 @@ h1 {
 	text-align: center;
 }
 .expand-button:hover {
-	background-color: #45708C;
+	/* background-color: #18242c; */
 	cursor:pointer;
 }
 
 .side-nav-items .side-nav-item:hover {
-	background-color: #45708C;
+	/* background-color: #18242c; */
 	/*border: black 1px solid;*/
-	margin-left: 5px;
+	/* margin-left: 5px; */
 	cursor:pointer;
 }
 
-.side-nav-item{
-	display: block;
-	width: 200px;
-	/*padding: 10px 0;*/
-	background-color: #4E7FA0;
-	visibility:hidden;
-	/*width: 50px;*/
-}
 .see_more div {
 	display: none;
 	padding-top: 10px;
@@ -133,7 +136,7 @@ h1 {
 	padding: 10px 15px 10px 15px;
 }
 .side-nav-items a:hover {
-	color: black;
+	color: rgba(255, 255, 255, 0.479);
 }
 
 #side-nav-expand {
@@ -177,7 +180,7 @@ h1 {
 }
 
 .fa:hover {
-	color: black;
+	color: rgba(255, 255, 255, 0.479);
 }
 
 /*Body styling for each section of the page.*/
@@ -186,7 +189,10 @@ h1 {
 	max-width: 1000px;
 	min-width: 600px;
 	margin: 0px auto 20px auto;
-	/*border: gray 1px solid;*/
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: rgb(199, 199, 199); 
+	border-radius: 12px 1px;
 	padding: 10px 50px;
 	background-color: #F1F1F1
 }
@@ -194,7 +200,7 @@ h1 {
 
 /*MAIN BODY*/
 .about-me{
-	text-align: justify;
+	/* text-align: justify; */
 	/*overflow for the picture*/
 	overflow: auto;
 	/*background: grey;*/
@@ -415,27 +421,35 @@ h1 {
 	font-style: italic;
 	font-weight: bold;
 }
-.date {
-		padding-bottom: 5px;
 
+.role {
+	color: rgba(0, 0, 0, 0.89);
+}
+
+.date {
+	color: rgba(0, 0, 0, 0.89);
+	padding-bottom: 5px;
 	float: right;
 	font-style: italic;
-
 }
+
 .entry-description {
 	/*background: green;*/
 	padding-left: 0;
 	margin-left: 0;
 }
+
 .entry-description li{
 	margin-top: 10px;
 	margin-left: 0;
 	padding-left: 0;
 	/*background: pink;*/
 }
+
 .skills {
 	list-style-type: none;
 }
+
 .language-skill {
 	border: #4E7FA0 1px solid;
 	color: #4E7FA0;
@@ -444,6 +458,7 @@ h1 {
 	border-radius: 8px;
 	float: left;
 }
+
 .technology-skill {
 	border: green 1px solid;
 	color: green;
